@@ -1,0 +1,86 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    opacity: 90%;
+    text-align: center;
+    background-color: #b8c4d4; /* White background for the container */
+    padding: 40px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    width: 100%;
+    max-width: 400px; /* Max width for large screens */
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #2c3e50; /* Darker color for better contrast */
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 1.9em;
+}
+
+.signin-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between buttons */
+}
+
+.signin-button {
+    background-color: #2870a0; /* Blue background */
+    color: #ffffff; /* White text color */
+    border: none;
+    padding: 15px;
+    border-radius: 27px;
+    font-size: 1.4em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.signin-button:hover {
+    background-color: #1f4f8a; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly scale up */
+}
+
+.signin-button:active {
+    background-color: #1a3d6e; /* Even darker blue when pressed */
+}
+
+
+@media (max-width: 480px) {
+    .container{
+        width: 60%;
+    }
+
+    body {
+        background-position: center;
+    }
+    
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+}

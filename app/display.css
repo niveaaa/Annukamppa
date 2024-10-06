@@ -1,0 +1,91 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.google-visualization-table td, .google-visualization-table th {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9; /* Light background color */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3.5em; /* Default font size */
+    color: #2c3e50; /* Darker color for better contrast */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#data, #chart_div {
+    width: 100%; /* Full width */
+    max-width: 600px; /* Limit max width for large screens */
+    margin: 0 auto; /* Center align horizontally */
+}
+
+.google-visualization-table {
+    border-collapse: collapse;
+    width: 100%; /* Full width */
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #ffffff; /* White background for the table */
+}
+
+.google-visualization-table td, .google-visualization-table th {
+    font-size: 1.5em; /* Default font size */
+    padding: 12px; /* Increased padding */
+    border: 4px solid #ddd;
+    text-align: center; /* Center align text */
+    vertical-align: middle; /* Center align text vertically */
+}
+
+.google-visualization-table th {
+    background-color: #2870a0; /* Blue background for headers */
+    color: #ffffff; /* White text color for headers */
+    font-weight: bold; /* Bold text for headers */
+}
+
+.google-visualization-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternating row colors */
+}
+
+.google-visualization-table tr:hover {
+    background-color: #ecf0f1; /* Hover effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4em; /* Larger font size for tablets */
+    }
+    
+    .google-visualization-table td, .google-visualization-table th {
+        font-size: 1.5em; /* Larger font size for table cells */
+        padding: 14px; /* Increased padding for table cells */
+    }
+    
+    #chart_div {
+        max-width: 80%; /* Increase chart width for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 4.5em; /* Larger font size for small screens */
+    }
+    
+    .google-visualization-table td, .google-visualization-table th {
+        font-size: 2em; /* Larger font size for table cells */
+        padding: 16px; /* Increased padding for table cells */
+    }
+    
+
+    #chart_div {
+        max-width: 90%; /* Increase chart width for small screens */
+    }
+}

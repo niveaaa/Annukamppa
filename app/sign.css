@@ -1,0 +1,99 @@
+/* styles.css */
+
+/* Existing styles omitted for brevity */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    opacity: 90%;
+    text-align: center;
+    background-color: #b8c4d4; /* White background for the form container */
+    padding: 40px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    width: 100%;
+    max-width: 400px; /* Max width for large screens */
+    margin: 0 auto; /* Center align horizontally */
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#password, #email {
+    background-color: #a4b1c2;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+    margin-top: 4px;
+}
+
+.submit-button {
+    background-color: #2870a0;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #1f4f8a;
+    transform: scale(1.05);
+}
+
+.submit-button:active {
+    background-color: #1a3d6e;
+}
+
+@media (max-width: 480px) {
+    .form-container{
+        width: 60%;
+    }
+}
+
