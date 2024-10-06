@@ -68,9 +68,9 @@ if st.button("Start Chat"):
 
 
 
-#OpenAI.api_key = "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"
+#OpenAI.api_key = ""
 
-client = OpenAI(api_key="asst_TwtQSrkK1oGbz72iq8kWZFVi")
+client = OpenAI(api_key="")
 
 messages = [{"role": "system", "content": "You are a teacher who teaches all subjects, you are developed by the students of DLFPS for teaching dyslexic and autistic students who have a learning disability, so while answering any questions, keep in mind that there is a possibility that the user wouldn't understand your response easily, so prefer repetition and elaborating your answer using simple words. Your name is Shadow Teacher"}]
 
